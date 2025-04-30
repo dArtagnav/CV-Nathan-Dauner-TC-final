@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Curriculum Vitae</title>
+    <meta charset="utf-8">
+    <link href="stylescv.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bfbfbf;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .cv-container {
+            display: flex;
+            gap: 40px;
+            max-width: 1000px;
+            width: 90%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .colonne-gauche, .colonne-droite {
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .colonne-gauche {
+            max-width: 300px;
+            background: #a0a0a0;
+            transition: background 0.3s ease-in-out;
+        }
+        .portrait {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .portrait:hover {
+            transform: scale(1.05);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .competence-liste, .centresinteret-liste {
+            list-style-type: none;
+            padding: 0;
+        }
+        .competence-liste li, .centresinteret-liste li {
+            background: #8a8a8a;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            transition: background 0.3s ease-in-out;
+        }
+        .competence-liste li:hover, .centresinteret-liste li:hover {
+            background: #6e6e6e;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            text-align: center;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            width: 250px;
+            text-transform: uppercase;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            margin: 0 auto;
+            display: block;
+        }
+        .btn:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+            text-decoration: none;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="colonne-gauche">
+            <img class="portrait" src="DAUNER-NATHAN.gif"/>
+            <div class="section">
+                <p><i>DAUNER Nathan</i></p>
+            </div>
+            <div class="section">
+                <h2>À PROPOS</h2>
+                <p>Le <strong>HTML</strong> et le <strong>CSS</strong> sont une de mes passions. J’aime coder et apprendre de nouvelles technologies pour améliorer mes compétences.</p>
+            </div>
+            <div class="section">
+                <h2>COMPÉTENCES</h2>
+                <ul class="competence-liste">
+                    <li>HTML - CSS</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Scratch</li>
+                    <li>MBlock</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Langues</h2>
+                <p>Français, langue maternelle<br>Anglais, Allemand, compétence professionnelle</p>
+            </div>
+            <div class="section">
+                <h2>Centres d'intérêts</h2>
+                <ul class="centresinteret-liste">
+                    <li>Badminton</li>
+                    <li>Archéologie</li>
+                    <li>Jeux vidéos</li>
+                    <li>Langues</li>
+                </ul>
+            </div>
+        </div>
+        <div class="colonne-droite">
+            <div class="en-tête">
+                <h1>DAUNER<span style="color: black;"> Nathan</span></h1>
+                <ul>
+                    <li>Adresse scolaire : <a href="mailto:ndauner@sevigne-db13.fr">ndauner@sevigne-db13.fr</a></li>
+                    <li>Adresse personnelle : <a href="mailto:nathandauner@gmail.com">nathandauner@gmail.com</a></li>
+                    <li>Adresse postale : 12 boulevard de Cazoran 13013 Marseille</li>
+                </ul>
+            </div>
+            <div class="contenu">
+                <div class="section">
+                    <h2>Études & Formations</h2>
+                    <ul>
+                        <li><strong>2015-2016</strong> : CE2, Primaire Sévigné-Marseille</li>
+                        <li><strong>2016-2017</strong> : CM1, Primaire Sévigné-Marseille</li>
+                        <li><strong>2017-2018</strong> : CM2, Primaire Sévigné-Marseille</li>
+                        <li><strong>2018-2022</strong> : Collège Sévigné-Marseille</li>
+                        <li><strong>2022-2025</strong> : Lycée Sévigné-Marseille</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Parcours Futur</h2>
+                    <p>2024 - 2025 : Année de césure à l'école théologique de la Chapelle de Fuveau</p>
+                    <p>2025 - 2028 : Licence d'Histoire à Aix-Marseille Université</p>
+                    <p>2028 - 2030 : Master en Histoire ou Archéologie</p>
+                    <p>2030 - ... : Début de carrière, puis doctorat en Archéologie</p>
+                </div>
+                <div class="section">
+                    <h2>Autres expériences</h2>
+                    <ul>
+                        <li>Inscrit au BAFA</li>
+                        <li>Conduite Accompagnée</li>
+                        <li>Attestation de sécurité routière ASSR 1&2</li>
+                        <li>Nombreux voyages : Grèce, Italie, Allemagne, Espagne, Belgique, USA, Canada, Croatie, Pologne...</li>
+                        <li>Pèlerinage au Puy-en-Velay et à Taizé avec le lycée</li>
+                        <li>Stage de 3ᵉ au <a href="https://musees.marseille.fr/musee-darcheologie-mediterraneenne-mam" target="_blank">MAM</a> de Marseille</li>
+                    </ul>
+                </div>
+                <a href="Lettre%20de%20motivation%20Nathan.html" class="btn" target="_blank">Voir la lettre de motivation</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
